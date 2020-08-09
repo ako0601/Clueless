@@ -1,0 +1,84 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko" dir="ltr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <title>LMT</title>
+    </head>
+
+    <body>
+        <div id="banner">
+            <h1><a href="main.html">LMT</a></h1>
+        </div>
+
+        <div id="menu">
+            <div class="menu-inner">
+                <ul>
+                    <li>
+                        <a>
+                        <div class="hamburger">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </a>
+                    </li>
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="">All Items</a></li>
+                    <li><a href="">T-Shirts</a></li>
+                    <li><a href="">Stickers</a></li>
+                    <li><a href="">Customizing</a></li>
+                    <li><a href="">Designs</a></li>
+                    <li><a href="">Rank</a></li>
+                    <li><a href="admin.html">관리</a></li>
+                </ul>
+            </div>
+        </div> 
+
+        <div class="container">
+            <table class="table table-bordered">
+                <thead>
+                    <caption>상품추가</caption>
+                </thead>
+                <tbody>
+                    <form action="write_ok.jsp" method="post" encType="multiplart/form-data">
+                        <tr>
+                            <th>상품명: </th>
+                            <td><input type="text" placeholder="상품명을 입력하세요" name="subject" class="form-control"/></td>
+                        </tr>
+                        <tr>
+                            <th>이미지파일: </th>
+                            <td><input type="text" placeholder="파일을 선택하세요. " name="filename" class="form-control"/></td>
+                        </tr>
+                        <tr>
+                            <th>가격: </th>
+                            <td><input type="text" placeholder="가격을 입력하세요" name="content" class="form-control"/></td>
+                        </tr>                        
+                        <tr>
+                            <th>비밀번호: </th>
+                            <td><input type="password" placeholder="비밀번호를 입력하세요" class="form-control"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="등록" onclick="sendData()" class="pull-right"/>
+                                <input type="button" value="reset" class="pull-left"/>
+                                <input type="button" value="상품 목록으로... " class="pull-right" onclick="javascript:location.href='list.jsp'"/>
+                            </td>
+                        </tr>
+                    </form>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

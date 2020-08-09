@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+        <title>Clueless</title>
+    </head>
+
+    <body>
+        <div class="body-main">
+            <div id="banner">
+                <a href="main.html"><img src="CLULESS WORLD MAIN LOGO-화이트.png" style="align-content: center;"></a>
+            </div>
+            
+            <div id="menu">
+                <div class="menu-inner">
+                    <ul>
+                        <li><a href="">티셔츠</a></li>
+                        <li><a href="">기타상품</a></li>
+                        <li><a href="admin.html">관리</a></li>
+                    </ul>
+                </div>
+            </div> 
+
+            <div id="container_main">
+                <div id="contents_box_side">
+                    <p>광고입니다.</p>
+                </div>                
+
+                <div id="contents_box_center">
+                    <div class="slideshow-container">                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 1</div>
+                            <img src="https://images.mypetlife.co.kr/content/uploads/2019/11/01190844/linda-robert-vq4FD80s18E-unsplash-e1574214243505.jpg" style="width: 100%; height: auto; max-height: 350px;">
+                            <div class="text">이녀석은 하루에 8번 똥을 쌉니다</div>
+                        </div>
+                    </div>
+                    <br>
+                        
+                    <div style="text-align:center">
+                        <span class="dot"></span>                         
+                    </div>
+        
+                    <script>
+                        var slideIndex = 0;
+                        showSlides();
+        
+                        function showSlides() {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {slideIndex = 1}    
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                            setTimeout(showSlides, 4000); // Change image every 4 seconds
+                        }
+                    </script>
+
+                    <div id="products_small_banner">
+                    </div>
+
+                    <div id="products">
+                        
+                        <div id="product">
+                            <a href="#" style="text-align: center;"><img src="Cluless World (main logo)-2 T.png"></a>
+                            <a href="#">Cluless World 망한 지구 티셔츠</a>
+                            <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
+                        </div>    
+                        
+                        <div id="product">
+                            <a href="#" style="text-align: center;"><img src="Cluless World T shirts -Saturn(실사).png"></a>
+                            <a href="#">Cluless World 망한 토성 티셔츠</a>
+                            <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
+                        </div> 
+
+                        <div id="product">
+                            <a href="#" style="text-align: center;"><img src="Cluless World T shirts -Saturn(실사).png"></a>
+                            <a href="#">Cluless World 망한 토성 티셔츠</a>
+                            <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
+                        </div> 
+
+                        <div id="product">
+                            <a href="#" style="text-align: center;"><img src="Cluless World T shirts -Saturn(실사).png"></a>
+                            <a href="#">Cluless World 망한 토성 티셔츠</a>
+                            <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
+                        </div> 
+
+                        <div id="product">
+                            <a href="#" style="text-align: center;"><img src="Cluless World T shirts -Saturn(실사).png"></a>
+                            <a href="#">Cluless World 망한 토성 티셔츠</a>
+                            <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
+                        </div> 
+                        
+                    </div>
+                </div>
+
+                <div id="contents_box_side">
+                    <p>광고입니다.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

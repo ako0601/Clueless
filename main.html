@@ -5,10 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <title>Clueless</title>
     </head>
 
     <body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
         <div class="body-main">
             <div id="banner">
                 <a href="main.html"><img src="CLULESS WORLD MAIN LOGO-화이트.png" style="align-content: center;"></a>
@@ -63,44 +66,74 @@
                             dots[slideIndex-1].className += " active";
                             setTimeout(showSlides, 4000); // Change image every 4 seconds
                         }
+
+                        
                     </script>
 
                     <div id="products_small_banner">
                     </div>
 
-                    <div id="products">
-                        
-                        <div id="product">
-                            <a href="#" style="text-align: center;"><img src="Cluless World (main logo)-2 T.png"></a>
-                            <a href="#">Cluless World 망한 지구 티셔츠</a>
-                            <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
-                        </div>    
-                        
-                        <div id="product">
-                            <a href="#" style="text-align: center;"><img src="Cluless World T shirts -Saturn(실사).png"></a>
-                            <a href="#">Cluless World 망한 토성 티셔츠</a>
-                            <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
-                        </div> 
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" style="text-align: center;"><img src="Cluless World (main logo)-2 T.png"></a>
+                                <a href="#">Cluless World 망한 지구 티셔츠</a>
+                                <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
+                            </div>    
+                            
+                            <div class="swiper-slide">
+                                <a href="#" style="text-align: center;"><img src="Cluless World T shirts -Saturn(실사).png"></a>
+                                <a href="#">Cluless World 망한 토성 티셔츠</a>
+                                <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
+                            </div> 
 
-                        <div id="product">
-                            <a href="#" style="text-align: center;"><img src="Cluless World T shirts -Saturn(실사).png"></a>
-                            <a href="#">Cluless World 망한 토성 티셔츠</a>
-                            <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
-                        </div> 
+                            <div class="swiper-slide">
+                                <a href="#" style="text-align: center;"><img src="Cluless World T shirts -Saturn(실사).png"></a>
+                                <a href="#">Cluless World 망한 토성 티셔츠</a>
+                                <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
+                            </div> 
 
-                        <div id="product">
-                            <a href="#" style="text-align: center;"><img src="Cluless World T shirts -Saturn(실사).png"></a>
-                            <a href="#">Cluless World 망한 토성 티셔츠</a>
-                            <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
-                        </div> 
+                            <div class="swiper-slide">
+                                <a href="#" style="text-align: center;"><img src="Cluless World T shirts -Saturn(실사).png"></a>
+                                <a href="#">Cluless World 망한 토성 티셔츠</a>
+                                <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
+                            </div> 
 
-                        <div id="product">
-                            <a href="#" style="text-align: center;"><img src="Cluless World T shirts -Saturn(실사).png"></a>
-                            <a href="#">Cluless World 망한 토성 티셔츠</a>
-                            <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
-                        </div> 
-                        
+                            <div class="swiper-slide">
+                                <a href="#" style="text-align: center;"><img src="Cluless World T shirts -Saturn(실사).png"></a>
+                                <a href="#">Cluless World 망한 토성 티셔츠</a>
+                                <p style="font-size: 0.7rem; font-weight: bold; text-align: right;">19,800원</p>
+                            </div> 
+                        </div>
                     </div>
+                    <!-- 네비게이션 버튼 -->
+                    <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                    <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+
+                    <!-- 페이징 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 스크롤바 -->
+                    <div class="swiper-scrollbar"></div>
+                    <script>
+                        new Swiper('.swiper-container', {
+
+                            // 스크롤바 설정하기
+                            scrollbar : {
+                                el : '.swiper-scrollbar',
+                                draggable: true,
+                            },
+
+                            pagination : { // 페이징 설정
+                                el : '.swiper-pagination',
+                                clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+                            },
+                            navigation : { // 네비게이션 설정
+                                nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+                                prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+                            },
+                        });
+                    </script>
                 </div>
 
                 <div id="contents_box_side">
@@ -109,4 +142,9 @@
             </div>
         </div>
     </body>
+    <footer>
+        <p>
+            소비자 고발은 01063379039로
+        </p>
+    </footer>
 </html>
